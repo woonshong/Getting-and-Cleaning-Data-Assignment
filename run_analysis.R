@@ -1,7 +1,7 @@
 library(data.table)
 library(dplyr)
 
-#Read Training sets
+#Read data sets
 trainDat <- read.table("./UCI HAR Dataset/train/X_train.txt")
 trainDat <- data.table(trainDat)
 
@@ -43,7 +43,7 @@ dt <- cbind(activityLab, subData)
 dt <- cbind(dt, ds)
 
 #PART 2
-
+# only select subject and activityLabel whcih contains the words "mean" and "std"
 dt <- select(dt,subject,activityLabel,contains("mean"),contains("std"))
 
 #PART 3
@@ -73,4 +73,3 @@ exportData <- exportData[order(exportData$subject,exportData$activityLabel),]
 
 #export the file
 write.table(exportData, file = "tidydata.txt", row.names = FALSE)
-head(exportData)
