@@ -1,7 +1,7 @@
 # Getting-and-Cleaning-Data-Assignment
 
 1. Download the data source and the required files from the github link provided below and put into a local folder.
-	https://github.com/asrulnb/Getting-and-Cleaning-Data-Assignment
+	https://github.com/woonshong/Getting-and-Cleaning-Data-Assignment
 	
 2. Open the run_analysis.R file in your Rstudio. 
 	- The Rstudio used to create this script is Version 0.99.465
